@@ -2,18 +2,6 @@
 <head>
 <script type="text/javascript">
 <!--
-function WriteCookie()
-{
-   if( document.myform.customer.value == "" ){
-      alert("Enter some value!");
-      return;
-   }
-
-   cookievalue= escape(document.myform.customer.value) + ";";
-   document.cookie="name=" + cookievalue + "expires=Monday, 04-Aug-2014" + ",path=/";
-   
-   alert("Setting Cookies : " + "name=" + cookievalue );
-}
 
 
 function ReadCookie()
@@ -36,8 +24,6 @@ function ReadCookie()
 </head>
 <body>
 <form name="myform" action="">
-Enter name: <input type="text" name="customer"/>
-<input type="button" value="Set Cookie" onclick="WriteCookie();"/>
 <input type="button" value="Get Cookie" onclick="ReadCookie()"/>
 </form>
 </body>
